@@ -1,1 +1,60 @@
-/* Your CSS here. */
+/* 設定整頁背景與基礎字型 */
+body {
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* 彩色卡片外觀（水藍色主題） */
+.card {
+  background-color: #e0f7fa; /* 淡水藍色背景 */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center; /* 讓內部元素水平置中 */
+  max-width: 350px;
+  width: 100%;
+}
+
+/* 標題樣式 */
+.card h1 {
+  color: #006064; /* 深水藍色文字 */
+  margin-bottom: 15px;
+}
+
+/* 圖片限制寬高 150px */
+.card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%; /* 圓形圖片，也可以拿掉這行變成方型 */
+  margin-bottom: 15px;
+}
+
+/* 傳記文字 */
+.card p {
+  color: #00838f;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: center; /* 如果想讓文字靠左對齊可以加上這行 */
+}
+
+/* 連結樣式 */
+.card a {
+  display: inline-block;
+  color: #ffffff;
+  background-color: #00acc1; /* 水藍色按鈕背景 */
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.card a:hover {
+  background-color: #00838f; /* 滑鼠移上去變深水藍 */
+}
